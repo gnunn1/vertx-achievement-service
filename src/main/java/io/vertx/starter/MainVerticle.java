@@ -17,7 +17,7 @@ public class MainVerticle extends AbstractVerticle {
 
   @Override
   public void start() {
-    LOGGER.setLevel(Level.INFO);
+    LOGGER.setLevel(Level.WARNING);
     Router router = Router.router(vertx);
     // Cors filter
     router.route().handler(CorsHandler.create("*"));
