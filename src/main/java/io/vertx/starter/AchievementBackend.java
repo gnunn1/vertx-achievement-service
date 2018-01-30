@@ -107,5 +107,7 @@ public class AchievementBackend {
     addAchievementType(achievementTypes, "golden", "Golden Snitch");
     
     ACHIEVEMENT_TYPES = achievementTypes;
+    
+    LOGGER.setLevel(Level.WARNING);
   }
 }
